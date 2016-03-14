@@ -1,0 +1,5 @@
+# Get all column names with their index number (useful for cut/awk extraction of columns)
+zcat gzipped.file.gz | awk ' { for (i = 1; i <= NF; ++i) print i, $i, '\n'; exit } '
+
+# sequence of numbers with custom delimeter (outputs 10,11,12, etc)
+seq --separator=, 10 36 
